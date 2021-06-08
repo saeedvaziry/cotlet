@@ -1,0 +1,46 @@
+{
+    "name": "saeedvaziry/cotlet",
+    "description": "Cotlet is an API authentication for Laravel",
+    "license": "MIT",
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "authors": [
+        {
+            "name": "Saeed Vaziry",
+            "email": "mr.saeedvaziry@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3",
+        "illuminate/support": "^6.0|^7.0|^8.0",
+        "illuminate/database": "^6.0|^7.0|^8.0",
+        "illuminate/auth": "^6.0|^7.0|^8.0",
+        "illuminate/contracts": "^6.0|^7.0|^8.0",
+        "illuminate/routing": "^6.0|^7.0|^8.0",
+        "illuminate/http": "^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0|^9.0",
+        "orchestra/testbench": "^4.0|^5.0|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SaeedVaziry\\Cotlet\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SaeedVaziry\\Cotlet\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SaeedVaziry\\Cotlet\\CotletServiceProvider"
+            ]
+        }
+    },
+    "prefer-stable": true
+}
