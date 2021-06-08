@@ -13,8 +13,9 @@ class LoginController extends Controller
 
     /**
      * @param Request $request
-     * 
+     *
      * @return JsonResource
+     * @throws ValidationException
      */
     public function login(Request $request)
     {
@@ -33,7 +34,7 @@ class LoginController extends Controller
 
     /**
      * @param Request $request
-     * 
+     *
      * @return void
      */
     protected function validateForm(Request $request): void

@@ -15,7 +15,7 @@
         <server name="APP_KEY" value="base64:HNPSuWmhqtq0UJGOSiIuoKKiXE0XYDVoWR52agZMtUE="/>
         <server name="APP_DEBUG" value="true"/>
         <server name="LOG_CHANNEL" value="stack"/>
-        <server name="DB_DATABASE" value="testbench"/>
+        <server name="DB_DATABASE" value="cotlet"/>
         <server name="DB_USERNAME" value="root"/>
         <server name="DB_PASSWORD" value="root"/>
         <server name="COTLET_USER_MODEL" value="SaeedVaziry\Cotlet\Tests\Fixtures\User"/>

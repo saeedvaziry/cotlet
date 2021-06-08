@@ -17,7 +17,7 @@ class CotletGuard implements Guard
     /**
      * @var Request
      */
-    private Request $request;
+    private $request;
 
     /**
      * ClientGuard constructor.
@@ -66,7 +66,7 @@ class CotletGuard implements Guard
 
     /**
      * @param array $credentials
-     * @return User|bool
+     * @return \Illuminate\Database\Eloquent\Model|null
      */
     public function attempt(array $credentials)
     {
@@ -92,7 +92,7 @@ class CotletGuard implements Guard
     }
 
     /**
-     * @return User|null
+     * @return \Illuminate\Database\Eloquent\Model|null
      */
     protected function getUser()
     {
