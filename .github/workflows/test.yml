@@ -9,11 +9,11 @@ on:
 jobs:
   tests:
     runs-on: ubuntu-latest
-
+    
     env:
       DB_DATABASE: testbench
       DB_USER: root
-      DB_PASSWORD: 'root'
+      DB_PASSWORD: ''
       DB_HOST: localhost
 
     steps:
@@ -21,7 +21,7 @@ jobs:
     - name: Run MySQL
       run: |
         sudo /etc/init.d/mysql start
-        mysql -e 'CREATE DATABASE wordpress_test;' -uroot -proot
+        mysql -e 'CREATE DATABASE testbench;' -uroot -proot
         mysql -e 'SHOW DATABASES;' -uroot -proot
 
     - name: Cache Composer packages

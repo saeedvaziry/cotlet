@@ -43,8 +43,6 @@ class TestCase extends \Orchestra\Testbench\TestCase
     {
         parent::setUp();
 
-        $this->app->bind(Guard::class, CotletGuard::class);
-
         $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
         $this->artisan('migrate')->run();
 
