@@ -2,13 +2,10 @@
 
 namespace SaeedVaziry\Cotlet\Tests;
 
-use Illuminate\Foundation\Testing\DatabaseTransactions;
 use SaeedVaziry\Cotlet\Tests\Fixtures\User;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
-    use DatabaseTransactions;
-
     /**
      * @var
      */
