@@ -2,14 +2,12 @@
 
 namespace SaeedVaziry\Cotlet\Tests;
 
-use Illuminate\Contracts\Auth\Guard;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use SaeedVaziry\Cotlet\Guards\CotletGuard;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
 use SaeedVaziry\Cotlet\Tests\Fixtures\User;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
-    use RefreshDatabase;
+    use DatabaseTransactions;
 
     /**
      * @var
